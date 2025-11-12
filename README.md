@@ -147,7 +147,13 @@ Errors follow the same structure with `status: "error"` and an informative `mess
 
 ```
 crud-operation/
-├── index.js                 # Express app & route handlers
+├── index.js                 # App bootstrap + swagger mounting
+├── config/
+│   └── swagger.js           # swagger-jsdoc + swagger-ui setup
+├── controllers/
+│   └── product.controller.js# CRUD handler implementations
+├── routes/
+│   └── product.route.js     # Express router + Swagger annotations
 ├── models/
 │   └── products.model.js    # Mongoose schema/model definition
 ├── package.json             # Scripts and dependencies
