@@ -9,6 +9,7 @@ Simple Express + MongoDB playground that demonstrates a full set of CRUD endpoin
 - Multer-powered form support without file uploads (handy for HTML forms).
 - Mongoose schema with timestamps and built-in validation.
 - Environment-based configuration for database URL and port.
+- Auto-generated Swagger documentation exposed at `/api-docs`.
 
 ## Tech Stack
 
@@ -48,6 +49,11 @@ Simple Express + MongoDB playground that demonstrates a full set of CRUD endpoin
    ```
 
 Once MongoDB is reachable you should see `Connected to MongoDB` and `Server is running on port 5000` in the console. Use `GET /` to confirm the health check: it returns `Server status is OK`.
+
+## API Documentation
+
+- View interactive docs at `http://localhost:<PORT>/api-docs`.
+- The OpenAPI spec is generated via `swagger-jsdoc` from the annotations inside `routes/product.route.js`.
 
 ## Scripts
 
